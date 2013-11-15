@@ -1,0 +1,3 @@
+alias lt='ls -ltr'
+# I know it's wrong place, but it's simple
+. /home/vagrant/.kerl/installs/r16b02/activate
