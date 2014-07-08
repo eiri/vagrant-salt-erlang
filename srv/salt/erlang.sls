@@ -37,16 +37,16 @@ kerl-completion:
   require:
     - pkg: curl
 
-build-r16b02:
+build-r17.1:
   cmd.run:
-    - name: /usr/local/bin/kerl build R16B02 r16b02
+    - name: /usr/local/bin/kerl build 17.1 r17.1
     - user: vagrant
     - group: vagrant
-    - unless: grep r16b02 /home/vagrant/.kerl/otp_builds
+    - unless: grep r17.1 /home/vagrant/.kerl/otp_builds
 
-install-r16b02:
+install-r17.1:
   cmd.run:
-    - name: /usr/local/bin/kerl install r16b02 /home/vagrant/.kerl/installs/r16b02
+    - name: /usr/local/bin/kerl install r17.1 /home/vagrant/.kerl/installs/17.1
     - user: vagrant
     - group: vagrant
-    - unless: grep r16b02 /home/vagrant/.kerl/otp_installations
+    - unless: grep r17.1 /home/vagrant/.kerl/otp_installations
