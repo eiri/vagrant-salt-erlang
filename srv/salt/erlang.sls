@@ -19,7 +19,7 @@ git:
 
 kerl:
   cmd.run:
-    - name: curl -O https://raw.github.com/spawngrid/kerl/master/kerl
+    - name: curl -O https://raw.githubusercontent.com/spawngrid/kerl/master/kerl
     - cwd: /usr/local/bin
     - stateful: True
     - unless: ls /usr/local/bin/kerl
@@ -31,7 +31,7 @@ kerl:
 
 kerl-completion:
   cmd.run:
-    - name: curl -O https://raw.github.com/spawngrid/kerl/master/bash_completion/kerl
+    - name: curl -O https://raw.githubusercontent.com/spawngrid/kerl/master/bash_completion/kerl
     - cwd: /etc/bash_completion.d
     - unless: ls /etc/bash_completion.d/kerl
   require:
