@@ -47,16 +47,16 @@ install-r16b03:
     - group: vagrant
     - unless: grep r16b03 /home/vagrant/.kerl/otp_installations
 
-build-17.1:
+build-r17b01:
   cmd.run:
-    - name: /usr/local/bin/kerl build 17.1 17.1
+    - name: /usr/local/bin/kerl build 17.1 r17b01
     - user: vagrant
     - group: vagrant
-    - unless: grep 17.1 /home/vagrant/.kerl/otp_builds
+    - unless: grep r17b01 /home/vagrant/.kerl/otp_builds
 
-install-17.1:
+install-r17b01:
   cmd.run:
-    - name: /usr/local/bin/kerl install 17.1 /home/vagrant/.kerl/installs/17.1
+    - name: /usr/local/bin/kerl install r17b01 /home/vagrant/.kerl/installs/r17b01
     - user: vagrant
     - group: vagrant
-    - unless: grep 17.1 /home/vagrant/.kerl/otp_installations
+    - unless: grep r17b01 /home/vagrant/.kerl/otp_installations
