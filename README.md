@@ -33,10 +33,21 @@ vagrant@precise64:~$ erl -version
 Erlang (SMP,ASYNC_THREADS) (BEAM) emulator version 5.10.3
 ```
 
+## Switching to different erlang release
+
+```bash
+$ kerl_deactivate
+$ kerl list installations
+r16b03 /home/vagrant/.kerl/installs/r16b03
+r17b01 /home/vagrant/.kerl/installs/r17b01
+$ . /home/vagrant/.kerl/installs/r17b01/activate
+erl -version
+Erlang (ASYNC_THREADS,HIPE) (BEAM) emulator version 6.1
+```
+
 ## Testing Salt's highstate
 
 Run `sudo salt-call state.highstate` from the virtual box.
-
 
 ## ToDo
 
